@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo%}Diseño de Interiores{% endblock %}
+
+    {% block cuerpo %}
+    
+
+    {% for new in news %}
+        <div>
+            <h2> <a href="{% url 'interiores:ver_interiores' new.id %}">{{ new.titulo }}</a></h2> <hr>
+            <p>
+                {{ new.contenido|truncatechars:250 }} <br>
+                {{ new.autor.get_full_name }} publicado: {{ new.f_pub }}
+            </p>
+        </div>
+    {% endfor %}
+
+{% endblock%}

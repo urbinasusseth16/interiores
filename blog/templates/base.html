@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+  <head>
+    <title>{% block titulo %}Diseño de Interiores{% endblock  %}</title>
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+  </head>
+  <body>
+    <body background="https://3.bp.blogspot.com/-2cJ5DzAkAd0/U3f2y9INXRI/AAAAAAAAJdo/Bs9MMYUkHkc/s1600/48734_1920x1200.jpg">
+    <!-- browser o explorador -->
+     
+      <nav>
+        <div class="nav-wrapper blue darken-4">
+          <a href="{% url 'blog:listar_publicaciones' %}" class="brand-logo">Diseño de Interiores</a>
+  
+          <a href="#" data-target="menu-chico" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'blog:listar_publicaciones'%}">Diseño Salas/Cocinas & Habitaciones</a></li>
+          </ul>
+        </div>
+  
+        <ul class="sidenav" id="menu-chico">
+            <li><a href="{% url 'blog:listar_publicaciones'%}">Diseño Salas/Cocinas & Habitaciones</a></li>
+        </ul>
+   </nav>
+         <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">¿Por que es importante el diseño de interiores?</a></li>
+        <li class="tab"><a class="active" href="#test2">¡La importancia de la decoracion en nuestra Habitacion! </a></li>
+        <li class="tab"><a href="#test4">¿Por que es importante decorar tu cocina?</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="test1" class="col s12"><font size="5">El diseño interior puede ayudarte a remodelar por completo tu casa para que te encuentres más a gusto en un espacio más cómodo y funcional. </div></font>
+  <div id="test2" class="col s12"><font size="4">Si por alguna razón aun no te has enterado de la verdadera importancia que tiene un dormitorio, estes un buen momento para saberlo. Aquí pasamos algo así como un tercio y a veces más de nuestra vida, allí dentro, descansando, pensando y demás, de ahí que sea tan importante un buen diseño y que cada detallecito no quede librado al azar.</div></font>
+  <div id="test4" class="col s12"><font size="5">De un tiempo a esta parte, la cocina se ha convertido en el corazón del hogar. Ha pasado de ser el lugar donde preparar la comida, a un sitio donde pasar mucho tiempo en compañía de la familia. Esto ha traído consigo la necesidad de adaptarlo para que estemos en él lo más cómodos posibles.</div></font>
+  
+  <div class="container" style="padding:zem";>
+
+        {% block cuerpo %}
+        
+        {% endblock %}
+
+       <h4 align="center" class="pink-text cyan darken-2 white-text hoverable">Diferentes Estilos de Salas, Cocinas & Habitaciones</h4>
+      <div align="center"><img src="logo.gif">
+      <img class="materialboxed" data-caption="" width="390" src="https://i.pinimg.com/originals/71/3a/9f/713a9fd5b1bda783794e05fc368087ce.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://i.pinimg.com/originals/58/51/0c/58510cbeb22fee728ee3b7ab8ed1eb0f.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://cdn.shopify.com/s/files/1/2217/4155/products/J-3210037_JGO_SALA_3-2_BONGOLIA_CHAMPION_CHOCOLATE_2_1400x_c0bc94d2-e3fb-4d70-b523-d12070e7eda2_500x.jpg?v=1572660864"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://http2.mlstatic.com/D_NQ_NP_983066-MLM42611706932_072020-W.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://i1.wp.com/3vetas.com/wp-content/uploads/2020/05/centro-de-entretenimiento-3vetas-mueble-pata-tv-de-55-tv-de-55-%C2%B4pulgadas-3vetas-panel-para-tv-12.jpg?fit=600%2C600"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://www.arquitectosmadrid20.com/blog/wp-content/uploads/cocinas-vintage-retro-estilo-decoracion-black-noir-negro-1024x576.jpg"><br>
+      </div>
+     <div class="video-container">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/SO9ECVDfmps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>   
+    </div>  
+   </div>  
+      <h1 align="center" class="pink-text cyan darken-2 white-text hoverable">Diseño Salas & Cocinas</h1>
+      <div align="center"><img src="logo.gif">
+      <img class="materialboxed" data-caption="" width="390" src="https://i.pinimg.com/originals/2b/58/f9/2b58f909a9587a05fd94bfb95309c130.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://i.pinimg.com/originals/2b/af/dc/2bafdc43b2deecae9b9326d2ca15810f.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://images.homify.com/c_fill,f_auto,q_0,w_740/v1439852898/p/photo/image/538524/DWG_MeetAlvesGuimara__es-VilaMadalena__RafaelRenzo_-97.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://casaydiseno.com/wp-content/uploads/2018/02/cocinas-abiertas-americanas.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://www.eiql.com.pe/wp-content/uploads/2020/03/B-2-scaled.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://planosdecasasmodernas.com/wp-content/uploads/2018/04/Cocinas-con-arcos-interiores.jpg"><br>
+
+      <h1 align="center" class="pink-text cyan darken-2 white-text hoverable">Diseños Interiores Habitaciones</h1>
+      <div align="center"><img src="logo.gif">
+      <img class="materialboxed" data-caption="" width="390" src="https://i.pinimg.com/originals/42/ac/80/42ac80cb50f26a118da4c86c377fb89c.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://casaydiseno.com/wp-content/uploads/2015/03/habitacion-dise%C3%B1o-moderno-luz.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://1.bp.blogspot.com/-VHQm_hE9imU/TgdW3UvHmmI/AAAAAAAABNc/PeG0GpXde7Y/s1600/Dormitorios-Minimalistas-Frescos-Ideas-de-Diseno-de-Interiores-8.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://image.freepik.com/foto-gratis/real-luxury-diseno-interiores-habitaciones-luz-espacio-luminoso-casa-o-hogar_41487-404.jpg"><br>
+      <img class="materialboxed" data-caption="" width="390" src="https://neilyvarelaicest2005.files.wordpress.com/2012/05/diseno-interior-adolescentes-03.jpg"><br>
+      </div>
+      
+      <h3 align="center" class="pink-text cyan darken-2 white-text hoverable">DESEO QUE TU ESTANCIA EN MI PAGINA HAYA SIDO AGRADABLE </h3>
+      <div id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Puedes Dejar Tu Comentario <small><a rel="nofollow" id="cancel-comment-reply-link" href="/comidas-tipicas-de-los-paises-de-america/#respond" style="display:none;"><i class="fa fa-times-circle fa-lg"></i></a></small></h3><form action="https://www.instagram.com/?hl=es-la" method="post" id="commentform" class="comment-form" novalidate=""><div class="col-sm-12"><div class="form-group comment-form-comment"><textarea id="comment" class="form-control" name="comment" rows="10" placeholder="Comentario *" required="required"></textarea></div></div><div class="col-sm-6"><div class="form-group comment-form-author"><input id="author" class="form-control" type="text" name="author" placeholder="Nombre *" value="" size="30" aria-required="true" required="required"></div></div><div class="col-sm-6"><div class="form-group comment-form-email"><input id="email" class="form-control" type="urbinasusseth@gmail.com" name="urbinasusseth@gmail.com" placeholder="urbinasusseth@gmail.com *" value="" size="30" aria-required="true" required="required"></div></div><p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label></p><div class="col-sm-12"><div class="form-group form-submit"><button type="submit" name="submit" id="submit" class="attachment_button">Publicar comentario</button> <input type="hidden" name="comment_post_ID" value="68434" id="comment_post_ID">
+  <input type="hidden" name="comment_parent" id="comment_parent" value="0"></div></div><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="319c810573"></p><p style="display: none;"></p><input type="hidden" id="ak_js" name="ak_js" value="1600998994090"></form></div>
+<div class="channels-wrapper">
+
+
+    <footer class="page-footer blue darken-4 white-tex">
+      <div alingn="center" style="padding:zem;">
+      Diseño de Interiores Susseth Lismely Urbina, Programacion, Instituto Despertar Yoreño
+    </div>
+    </footer>
+
+  </body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+              M.AutoInit();
+              });
+    </script>
+
+
+    </html>
